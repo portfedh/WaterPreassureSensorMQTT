@@ -1,10 +1,13 @@
-// Created by: Pablo Cruz//
-// Date: 12 March 2021 //
+// Created by: Pablo Cruz Lemini 
+// 12 March 2021
+
+//--------------Water Preassure Sensor-----------------------
+/* Sketch reads values from a preassure sensor connected to the main waterline.
+*  It then sends the values through MQTT to a broker 
+*  Read the Readme file first */
 
 /* ----------Board Information-------------------------------
  Code desinged to run on Wemos in pin D0
-     - 
-
  
  For runing in ESP8266 or ESP32 GPIO must be defined as input
     - pinMode(water_pressure_pin, INPUT);

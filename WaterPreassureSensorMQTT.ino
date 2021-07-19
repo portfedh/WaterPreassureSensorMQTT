@@ -14,8 +14,6 @@
 //-----------Variable Declarations-------------------------------------
 
 //Possible Analog to Digital Converter values:
-// Can be substituted by mapped funcion:
-// int mappedValue = map(raw_value, 10.0 , 921.6, 0, 1023)
 const float min_analog_real = 10.0;           // Calibration Value
 const float min_analog_theoretical = 102.4;
 const float min_analog = min_analog_real; 
@@ -32,6 +30,9 @@ const float max_bars = 12.0;
 //PSI preassure range supported by the sensor:
 const float min_psi = 0.0; 
 const float max_psi = 174.04; 
+
+// Analog to voltage, bars and PSI functions can be substituted by mapped funcion:
+// int mappedValue = map(raw_value, 10.0 , 921.6, 0, 1023)
 
 // Function to connect to MQTT 
 EspMQTTClient client(
@@ -117,7 +118,6 @@ if(current_time - previous_time >= event_interval) {
         
     // Update timing for next Mills Loop
     previous_time = current_time;
-        
 }
 
 }
