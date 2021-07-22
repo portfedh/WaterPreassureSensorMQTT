@@ -1,0 +1,10 @@
+# Requirements
+ESP8266 Board
+SKU237545 Pressure Sensor
+Arduino IDE
+Arduino Board Library: Generic ESP8266 Module
+Arduino Library: EspMQTTClient
+RaspberryPi
+Node-Red
+MQTT Mosquito Broker
+Grafana
