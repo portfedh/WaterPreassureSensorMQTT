@@ -112,12 +112,11 @@ if(current_time - previous_time >= event_interval) {
         Serial.print('\n');
 
     // MQTT Client Publisher
-    client.publish(water_pressure_psi_topic, float(preassure_psi, 1));
-    client.publish(water_pressure_bar_topic, float(preassure_bar, 1));
-        Serial.print('\n');
+    client.publish(water_pressure_psi_topic, String(preassure_psi));
+    client.publish(water_pressure_bar_topic, String(preassure_bar));
+    Serial.print('\n');
         
     // Update timing for next Mills Loop
     previous_time = current_time;
 }
-
 }
