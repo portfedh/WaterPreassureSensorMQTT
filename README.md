@@ -50,7 +50,12 @@ The ESP8266 can also be used, but the sensor will have to be powered independent
 ![Connection Diagram](https://bite-size.mx/WaterPressureDiagram.png)
 
 **Wemos D1 (Wemos D1 Mini will work as well):**
+An ESP8266 or ESP32 will not work for this project, since they supply the sensor with 3 volts and the sensor requires 5 volts to work propperly.
 ![Wemos D1](https://bite-size.mx/WemosD1.jpg)
+
+**Calibrating the sensor:**
+To calibrate the sensor, you can add a manual pressure sensor and compare its values to what the Wemos is reporting.
+![SensorCalibration](http://bite-size.mx/WaterPressureSensorCalibration.png)
 
 **How to Connect the sensor:**
 ![Connected Sensor](https://bite-size.mx/WaterPressureSensor.jpg)
@@ -78,9 +83,11 @@ The ESP8266 can also be used, but the sensor will have to be powered independent
 
 **Output should be something similar to the following:**
 
----(Serial Monitor GIF here)---
+**Serial Monitor:**
+![Serial Monitor](https://bite-size.mx/WaterPressureSensorSerial.png)
 
-----(MQTT Broker GIF here)--
+**MQTT Mosquitto Broker:**
+![Serial Monitor](https://bite-size.mx/WaterPressureSensorMosquitto.png)
 
 ## Use cases
 
